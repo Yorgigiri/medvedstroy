@@ -1,0 +1,17 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/mainHeader";
+@import "partials/mainMenu";
+
+.medvedstroy {
+    &__inner {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1447px;
+    }
+}
+
+
+
+
+

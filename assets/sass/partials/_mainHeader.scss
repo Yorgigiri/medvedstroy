@@ -1,0 +1,28 @@
+.mainHeader {
+    height: 100px;
+    @include flex(center, space-between);
+    &__logo {
+        width: 180px;
+        height: 49px;
+        background: url(../img/logo.png) no-repeat;
+    }
+    &__adress {
+        padding-left: 30px;
+        position: relative;
+        color: $c_gray;
+        font-size: 14px;
+        line-height: 11px;
+        &-element {
+            margin-bottom: 10px;
+        }
+        &::before {
+            content: "";
+            width: 10px;
+            height: 13px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(../img/icon-1.png) no-repeat;
+        }
+    }
+}
