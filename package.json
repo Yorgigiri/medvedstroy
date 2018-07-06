@@ -29,7 +29,7 @@
     "normalize.scss": "^0.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-buffer": "^1.1.1",
-    "vueify": "^9.4.1"
+    "vue": "^2.5.16"
   },
   "scripts": {
     "test": "test",

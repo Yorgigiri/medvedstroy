@@ -6,7 +6,6 @@ const source = require('vinyl-source-buffer');
 const buffer = require('vinyl-buffer')
 const browserify = require('browserify');
 const babelify = require('babelify');
-// const vueify = require('vueify');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
@@ -68,7 +67,6 @@ gulp.task('js:build', function () {
         .transform(babelify, {
             presets: ['es2015']
         })
-        // .transform(vueify)
         .bundle()
         .pipe(source('main.min.js'))
         .pipe(gulp.dest('dist/js'))
